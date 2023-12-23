@@ -1,0 +1,13 @@
+.with-sidebar {
+  display: flex;
+  width: 100%;
+  
+  main {
+    flex: 1;
+    height: 100vh;
+  }
+
+  .aside {
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,39 @@
+<main>
+
+  <h1>Testing the classic counter</h1>
+
+  <section role="region">
+
+    <fieldset>
+      <legend>Classic State</legend>
+
+      <input type="number"
+             [(ngModel)]="myCounter" />
+    </fieldset>
+
+    <fieldset>
+      <legend>With Signal</legend>
+
+
+      <div>
+        <button (click)="increment()">+</button>
+        <input type="number"
+               [value]="counter()" />
+        <button (click)="decrement()">-</button>
+      </div>
+
+      <button class="reset" (click)="reset()">
+        Reset
+      </button>
+    </fieldset>
+
+
+    @if (isLteZero()) {
+    <p class="error-message">
+      The number should be greater than 0
+    </p>
+    }
+
+  </section>
+
+</main>
